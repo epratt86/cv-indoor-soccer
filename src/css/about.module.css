@@ -11,12 +11,11 @@
 .about-info {
   margin-top: 3rem;
 }
-.about-info svg {
-  vertical-align: middle;
+.feature svg {
   color: var(--primaryColor);
-  font-size: 2rem;
   margin-right: 0.5rem;
 }
+
 .about-img {
   position: relative;
 }
@@ -32,6 +31,10 @@
 .about-info h4 {
   font-size: 1.9rem;
   text-transform: uppercase;
+}
+
+.feature {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {

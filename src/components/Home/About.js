@@ -36,23 +36,32 @@ const About = () => {
         </article>
         <article className={styles.aboutInfo}>
           <h4>Key features</h4>
-          <p>
-            <TiChevronRight />
-            Ten, all-weather synthetic ProTurf fields
-          </p>
-          <p>
-            <TiChevronRight />
-            LED stadium lighting
-          </p>
-          <p>
-            <TiChevronRight />
-            Convenient location in the heart of Chula Vista
-          </p>
-          <p>
-            <TiChevronRight />
-            Leagues for both men, women, and co-ed
-          </p>
-          <AniLink fade to="/contact" className="btn-primary">
+          <div className={styles.feature}>
+            <TiChevronRight size={26} />
+            <p>Ten, all-weather synthetic ProTurf fields</p>
+          </div>
+          <div className={styles.feature}>
+            <TiChevronRight size={26} />
+            <p>LED stadium lighting</p>
+          </div>
+          <div className={styles.feature}>
+            <TiChevronRight size={26} />
+            <p>Convenient location in the heart of Chula Vista</p>
+          </div>
+          <div className={styles.feature}>
+            <TiChevronRight size={26} />
+            <p>Leagues for both men, women, and co-ed</p>
+          </div>
+          <div className={styles.feature}>
+            <TiChevronRight size={26} />
+            <p>Games start this winter. Sign your team up now!</p>
+          </div>
+          <AniLink
+            fade
+            to="/contact"
+            className="btn-primary"
+            style={{ marginTop: "1rem" }}
+          >
             contact us
           </AniLink>
         </article>
