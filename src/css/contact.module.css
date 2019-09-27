@@ -27,6 +27,13 @@
   padding-top: 1rem;
 }
 
+.contact-heading {
+  line-height: 30px;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  padding: 2rem;
+}
+
 @media screen and (min-width: 992px) {
   .center {
     width: 50vw;

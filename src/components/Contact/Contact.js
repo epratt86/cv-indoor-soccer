@@ -8,7 +8,7 @@ const Contact = () => {
     <section className={styles.contact}>
       <Title title="contact" subtitle="us" />
       <div className={styles.center}>
-        <h4 style={{ marginBottom: "2rem", lineHeight: "40px" }}>
+        <h4 className={styles.contactHeading}>
           Have a question about our upcoming facility, rules, or futsal? Please
           feel free to contact us with the below form and one of our
           representatives will get back to you as soon as possible. We look

@@ -56,12 +56,7 @@ const About = () => {
             <TiChevronRight size={26} />
             <p>Games start this winter. Sign your team up now!</p>
           </div>
-          <AniLink
-            fade
-            to="/contact"
-            className="btn-primary"
-            style={{ marginTop: "1rem" }}
-          >
+          <AniLink fade to="/contact" className="btn-primary" id={styles.cta}>
             contact us
           </AniLink>
         </article>
