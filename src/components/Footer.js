@@ -1,6 +1,6 @@
 import React from "react"
 import { FaMapMarkerAlt } from "react-icons/fa"
-import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
+import { FaFacebookSquare, FaInstagram, FaEnvelope } from "react-icons/fa"
 import styles from "../css/footer.module.css"
 
 const Footer = () => {
@@ -26,6 +26,14 @@ const Footer = () => {
             className={styles.socialIcon}
           >
             <FaInstagram />
+          </a>
+          <a
+            href="mailto:info@cvindoor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialIcon}
+          >
+            <FaEnvelope />
           </a>
         </div>
         <div className={styles.copyright}>

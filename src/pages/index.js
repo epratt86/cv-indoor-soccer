@@ -7,7 +7,7 @@ import StyledHero from "../components/StyledHero"
 import Contact from "../components/Contact/Contact"
 import SEO from "../components/SEO"
 import { graphql } from "gatsby"
-import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
+import { FaFacebookSquare, FaInstagram, FaEnvelope } from "react-icons/fa"
 import styles from "../css/index.module.css"
 
 export default class HomePage extends React.Component {
@@ -112,6 +112,14 @@ export default class HomePage extends React.Component {
                   className={styles.socialIcon}
                 >
                   <FaInstagram />
+                </a>
+                <a
+                  href="mailto:info@cvindoor.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialIcon}
+                >
+                  <FaEnvelope />
                 </a>
               </div>
             </div>
