@@ -3,7 +3,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 // import links from "../constants/links"
-import socialIcons from "../constants/social-icons"
 import logo from "../images/CVindoorLogo.png"
 
 const Navbar = () => {
@@ -43,20 +42,6 @@ const Navbar = () => {
             )
           })} */}
         </ul>
-        <div className={styles.navSocialLinks}>
-          {socialIcons.map((icon, index) => {
-            return (
-              <a
-                key={index}
-                href={icon.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {icon.icon}
-              </a>
-            )
-          })}
-        </div>
       </div>
     </nav>
   )
