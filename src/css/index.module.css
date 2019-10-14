@@ -25,6 +25,26 @@
   -webkit-appearance: none;
 }
 
+.row {
+  display: grid;
+  grid-template-columns: 750px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-icon {
+  font-size: 2.2rem;
+  color: var(--primaryColor);
+  text-decoration: none;
+  margin: 0 0.4rem;
+}
+
+.social-icon:hover {
+  color: var(--mainGrey);
+}
+
 @media screen and (max-width: 768px) {
   .landing .logo {
     margin: 1rem auto;
@@ -48,5 +68,8 @@
   }
   .mailchimp input[type="submit"] {
     width: 100%;
+  }
+  .row {
+    display: block;
   }
 }

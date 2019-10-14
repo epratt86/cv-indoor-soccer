@@ -7,7 +7,7 @@ import StyledHero from "../components/StyledHero"
 import Contact from "../components/Contact/Contact"
 import SEO from "../components/SEO"
 import { graphql } from "gatsby"
-
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
 import styles from "../css/index.module.css"
 
 export default class HomePage extends React.Component {
@@ -60,32 +60,60 @@ export default class HomePage extends React.Component {
             img={this.props.data.defaultBcg.childImageSharp.fluid}
           >
             <div className="container">
-              <Img
-                fluid={this.props.data.logo.childImageSharp.fluid}
-                className={styles.logo}
-              />
-              <h1>Chula Vista Indoor Soccer</h1>
-              <h4>
-                6v6 indoor soccer coming to Chula Vista in 2020. Check back soon
-                for grand opening tournament details, season leagues, and sign
-                up information.
-              </h4>
-              <p>
-                Join our mailing list and stay up to date on the latest updates.
-              </p>
-              <form onSubmit={this._handleSubmit} className={styles.mailchimp}>
-                <input
-                  type="email"
-                  onChange={this._handleChange}
-                  placeholder="example@gmail.com"
-                  name="email"
-                  required
+              <div className={styles.row}>
+                <Img
+                  fluid={this.props.data.logo.childImageSharp.fluid}
+                  className={styles.logo}
                 />
-                <input type="submit" className="btn-primary" value="sign up" />
-              </form>
-              <p className={`message ${this.state.className}`}>
-                {this.state.message}
-              </p>
+                <h1>Chula Vista Indoor Soccer</h1>
+                <h4>
+                  6v6 indoor soccer coming to Chula Vista in 2020. Check back
+                  soon for grand opening tournament details, season leagues, and
+                  sign up information.
+                </h4>
+                <p>
+                  Join our mailing list and stay up to date on the latest
+                  updates.
+                </p>
+                <form
+                  onSubmit={this._handleSubmit}
+                  className={styles.mailchimp}
+                >
+                  <input
+                    type="email"
+                    onChange={this._handleChange}
+                    placeholder="example@gmail.com"
+                    name="email"
+                    required
+                  />
+                  <input
+                    type="submit"
+                    className="btn-primary"
+                    value="sign up"
+                  />
+                </form>
+                <p className={`message ${this.state.className}`}>
+                  {this.state.message}
+                </p>
+              </div>
+              <div className={styles.socialLinks}>
+                <a
+                  href="https://www.facebook.com/Chula-Vista-Indoor-Soccer-101796581240478/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialIcon}
+                >
+                  <FaFacebookSquare />
+                </a>
+                <a
+                  href="http://www.instagram.com/chulavista_indoor_soccer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialIcon}
+                >
+                  <FaInstagram />
+                </a>
+              </div>
             </div>
           </StyledHero>
         </div>

@@ -12,7 +12,6 @@
 }
 
 .location {
-  line-height: 20px;
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
@@ -21,7 +20,7 @@
   border-bottom: 1px solid var(--darkGrey);
   max-width: 500px;
   width: 100%;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1rem;
 }
 
 .location svg {
@@ -29,4 +28,22 @@
   font-size: 2rem;
   vertical-align: middle;
   margin-right: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+.social-icon:hover {
+  color: var(--mainGrey);
 }
