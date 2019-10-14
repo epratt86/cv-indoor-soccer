@@ -1,0 +1,48 @@
+.landing {
+  color: #fff;
+}
+
+.landing h1 {
+  text-transform: uppercase;
+  margin: 1rem 0 5px;
+}
+
+.landing p {
+  letter-spacing: 1px;
+}
+
+.landing .logo {
+  max-width: 300px;
+}
+
+.mailchimp input[type="email"] {
+  padding: 0.5rem;
+  width: 250px;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .landing .logo {
+    margin: 1rem auto;
+    max-width: 275px;
+  }
+  .landing h1 {
+    font-size: 2rem;
+  }
+  .landing h4 {
+    font-weight: normal;
+    letter-spacing: 2px;
+  }
+
+  .landing p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  .mailchimp input[type="email"] {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .mailchimp input[type="submit"] {
+    width: 100%;
+  }
+}

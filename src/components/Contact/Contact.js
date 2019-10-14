@@ -1,18 +1,17 @@
 import React from "react"
-import Title from "../Title"
 import styles from "../../css/contact.module.css"
 import { FaUser, FaEnvelope, FaPhone, FaRegCommentDots } from "react-icons/fa"
 
 const Contact = () => {
   return (
     <section className={styles.contact}>
-      <Title title="contact" subtitle="us" />
       <div className={styles.center}>
+        <h3 className={styles.title}>contact us</h3>
         <h4 className={styles.contactHeading}>
-          Have a question about our upcoming facility, rules, or futsal? Please
-          feel free to contact us with the below form and one of our
-          representatives will get back to you as soon as possible. We look
-          forward to hearing from you.
+          Have a question about our upcoming facility, rules, or leagues
+          available? Please feel free to contact us with the form below and one
+          of our representatives will get back to you as soon as possible. We
+          look forward to hearing from you.
         </h4>
         <form
           name="contact"

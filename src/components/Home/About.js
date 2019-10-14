@@ -1,5 +1,4 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
 import { useStaticQuery, graphql } from "gatsby"
@@ -38,11 +37,19 @@ const About = () => {
           <h4>Key features</h4>
           <div className={styles.feature}>
             <TiChevronRight size={26} />
-            <p>Ten, all-weather synthetic ProTurf fields</p>
+            <p>All-weather artificial turf field</p>
           </div>
           <div className={styles.feature}>
             <TiChevronRight size={26} />
-            <p>LED stadium lighting</p>
+            <p>Leagues for me, women, co-ed, and youth</p>
+          </div>
+          <div className={styles.feature}>
+            <TiChevronRight size={26} />
+            <p>6 vs 6 soccer</p>
+          </div>
+          <div className={styles.feature}>
+            <TiChevronRight size={26} />
+            <p>LED Lighting</p>
           </div>
           <div className={styles.feature}>
             <TiChevronRight size={26} />
@@ -50,15 +57,8 @@ const About = () => {
           </div>
           <div className={styles.feature}>
             <TiChevronRight size={26} />
-            <p>Leagues for both men, women, and co-ed</p>
-          </div>
-          <div className={styles.feature}>
-            <TiChevronRight size={26} />
             <p>Games start this winter. Sign your team up now!</p>
           </div>
-          <AniLink fade to="/contact" className="btn-primary" id={styles.cta}>
-            contact us
-          </AniLink>
         </article>
       </div>
     </section>

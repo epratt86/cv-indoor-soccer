@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 
 :root {
   --primaryColor: #287d82;
@@ -8,7 +8,7 @@
   --mainGrey: #ececec;
   --darkGrey: #afafaf;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 4px;
+  --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
@@ -41,14 +41,6 @@ p {
 }
 a {
   text-decoration: none;
-}
-.defaultHero {
-  min-height: calc(100vh - 62px);
-  background: linear-gradient(rgba(40, 125, 130, 0.7), rgba(0, 0, 0, 0.2)),
-    url("../images/CVIndoor2.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .btn-white,
 .btn-primary {
@@ -74,12 +66,27 @@ a {
   background: transparent;
   color: var(--primaryColor);
 }
-/* .gatsby-image-wrapper {
-  max-height: 600px;
-  box-shadow: var(--lightShadow);
-} */
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
 main {
   min-height: calc(100vh - 132px);
   display: flex;
   flex-direction: column;
+}
+
+.message {
+  margin: 1rem 0;
+  padding: 1rem;
+  max-width: 700px;
+  width: 100%;
+}
+
+.success {
+  background: #5cb85c;
+}
+
+.failure {
+  background: #d9534f;
 }
