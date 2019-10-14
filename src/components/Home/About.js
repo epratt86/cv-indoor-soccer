@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <section className={styles.about}>
-      <Title title="winter" subtitle="2019" />
+      <Title title="coming" subtitle="2020" />
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>
@@ -41,7 +41,7 @@ const About = () => {
           </div>
           <div className={styles.feature}>
             <TiChevronRight size={26} />
-            <p>Leagues for me, women, co-ed, and youth</p>
+            <p>Leagues for men, women, co-ed, and youth</p>
           </div>
           <div className={styles.feature}>
             <TiChevronRight size={26} />

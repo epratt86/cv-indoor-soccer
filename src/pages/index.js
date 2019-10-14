@@ -66,7 +66,7 @@ export default class HomePage extends React.Component {
               />
               <h1>Chula Vista Indoor Soccer</h1>
               <h4>
-                6v6 indoor soccer coming to Chula Vista in 2019. Check back soon
+                6v6 indoor soccer coming to Chula Vista in 2020. Check back soon
                 for grand opening tournament details, season leagues, and sign
                 up information.
               </h4>
