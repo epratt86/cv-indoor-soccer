@@ -39,6 +39,16 @@ module.exports = {
           "https://gmail.us20.list-manage.com/subscribe/post?u=0064e5f2c81f9a9897dab1e49&amp;id=cda5e761aa",
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.cvindoor.com",
+        sitemap: "https://www.cvindoor.com/sitemap.xml",
+        policity: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-styled-components",
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
