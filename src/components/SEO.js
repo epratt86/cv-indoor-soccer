@@ -21,9 +21,11 @@ const SEO = ({ title, description }) => {
 
   const { siteDesc, siteTitle, siteUrl } = site.siteMetadata
 
+  console.log(description)
+
   return (
     <Helmet title={`${title} | ${siteTitle}`} htmlAttributes={{ lang: "en" }}>
-      <meta name="description" content={description || siteDesc} />
+      <meta name="description" content={siteDesc} />
       {/* twitter card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta
@@ -34,7 +36,7 @@ const SEO = ({ title, description }) => {
       <meta
         name="twitter:description"
         property="twitter:description"
-        content={`${description}`}
+        content={`${siteDesc}`}
       />
       <meta
         name="twitter:image"
@@ -54,7 +56,7 @@ const SEO = ({ title, description }) => {
       <meta
         name="og:description"
         property="og:description"
-        content={`${description}`}
+        content={`${siteDesc}`}
       />
       <meta name="og:url" property="og:url" content={`${siteUrl}`} />
       <meta name="og:image" property="og:image" content={img} />
