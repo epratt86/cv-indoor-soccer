@@ -41,6 +41,10 @@
   margin: 0 0.4rem;
 }
 
+.social-icon:first-child {
+  margin-left: 0;
+}
+
 .social-icon:hover {
   color: var(--mainGrey);
 }
