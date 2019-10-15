@@ -21,24 +21,14 @@ const SEO = ({ title, description }) => {
       <html lang="en" />
       <meta name="description" content={`${description}`} />
       <meta
-        name="og:title"
         property="og:title"
         content={`${title} | ${data.site.siteMetadata.title}`}
       />
+      <meta property="og:description" content={`${description}`} />
+      <meta property="og:url" content={`${data.site.siteMetadata.siteUrl}`} />
       <meta
-        name="og:description"
-        property="og:description"
-        content={`${description}`}
-      />
-      <meta
-        name="og:url"
-        property="og:url"
-        content={`${data.site.siteMetadata.siteUrl}`}
-      />
-      <meta
-        name="og:image"
         property="og:image"
-        content="https://photos.google.com/u/1/search/_tra_/photo/AF1QipMZPsUehSeIxz99XYfhhAc8R8AR26Sq8mWVzxBA"
+        content="https://www.cvindoor.com/static/e663885cd35321d563a0490a83a59cd4/775d9/thumbnail.jpg"
       />
       <meta keywords={`${data.site.siteMetadata.keywords}`} />
       <meta property="og:site_name" content="Chula Vista Indoor Soccer" />
@@ -57,7 +47,7 @@ const SEO = ({ title, description }) => {
       <meta
         name="twitter:image"
         property="twitter:image"
-        content="https://photos.google.com/u/1/search/_tra_/photo/AF1QipMZPsUehSeIxz99XYfhhAc8R8AR26Sq8mWVzxBA"
+        content="https://www.cvindoor.com/static/e663885cd35321d563a0490a83a59cd4/775d9/thumbnail.jpg"
       />
       <meta name="twitter:image:alt" content="Chula Vista Indoor Soccer" />
       <meta name="twitter:site" content="@epratt.net" />
