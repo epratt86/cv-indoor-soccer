@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import img from "../images/CVindoorLogo.png"
+import img from "../images/thumbnail.jpg"
 
 const getData = graphql`
   query {
@@ -39,7 +39,7 @@ const SEO = ({ title, description }) => {
       <meta
         name="twitter:image"
         property="twitter:image"
-        content="https://photos.google.com/u/1/photo/AF1QipMeIVjjAETIjfpO7SynqQWAzXnw-k_ItXnJ5veL"
+        content="https://photos.google.com/u/1/search/_tra_/photo/AF1QipMZPsUehSeIxz99XYfhhAc8R8AR26Sq8mWVzxBA"
       />
       <meta name="twitter:image:alt" content="Chula Vista Indoor Soccer" />
       <meta name="twitter:site" content="@epratt.net" />
