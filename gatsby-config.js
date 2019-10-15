@@ -14,8 +14,8 @@ module.exports = {
     description:
       "Chula Vista Indoor Soccer provides a premium indoor soccer facility in San Diego County.",
     author: "Eric Pratt",
-    image: "/CVindoorLogo.png",
     siteUrl: "https://www.cvindoor.com",
+    keywords: "soccer, Chula Vista, indoor soccer, san diego",
   },
   plugins: [
     {
