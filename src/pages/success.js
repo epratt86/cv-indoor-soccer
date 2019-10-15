@@ -4,10 +4,15 @@ import StyledHero from "../components/StyledHero"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
+import SEO from "../components/SEO"
 
 const success = ({ data }) => {
   return (
     <Layout>
+      <SEO
+        title="Success"
+        description="Thank you for your form submission. One of our associates will be getting in touch with you shortly."
+      />
       <StyledHero success="true" img={data.successBkg.childImageSharp.fluid}>
         <Banner
           title="Success"

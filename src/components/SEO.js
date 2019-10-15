@@ -19,10 +19,7 @@ const SEO = ({ title, description }) => {
   return (
     <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
       <html lang="en" />
-      <meta
-        name="description"
-        content={`${data.site.siteMetadata.description}`}
-      />
+      <meta name="description" content={`${description}`} />
       <meta
         name="og:title"
         property="og:title"
@@ -31,7 +28,7 @@ const SEO = ({ title, description }) => {
       <meta
         name="og:description"
         property="og:description"
-        content={`${data.site.siteMetadata.description}`}
+        content={`${description}`}
       />
       <meta
         name="og:url"
@@ -55,7 +52,7 @@ const SEO = ({ title, description }) => {
       <meta
         name="twitter:description"
         property="twitter:description"
-        content={`${data.site.siteMetadata.description}`}
+        content={`${description}`}
       />
       <meta
         name="twitter:image"

@@ -53,7 +53,10 @@ export default class HomePage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" />
+        <SEO
+          title="Home"
+          description="Welcome to Chula Vista Indoor Soccer! Sign up for our mailing list and stay up to date with our future grand opening. We will be providing indoor soccer in the heart of Chula Vista in 2020."
+        />
         <div className={styles.landing}>
           <StyledHero
             home="true"
