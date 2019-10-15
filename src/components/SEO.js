@@ -28,7 +28,7 @@ const SEO = ({ title, description }) => {
       <meta property="og:url" content={`${data.site.siteMetadata.siteUrl}`} />
       <meta
         property="og:image"
-        content="https://www.cvindoor.com/static/e663885cd35321d563a0490a83a59cd4/775d9/thumbnail.jpg"
+        content="https://www.cvindoor.com/thumbnail.jpg"
       />
       <meta keywords={`${data.site.siteMetadata.keywords}`} />
       <meta property="og:site_name" content="Chula Vista Indoor Soccer" />
@@ -47,7 +47,7 @@ const SEO = ({ title, description }) => {
       <meta
         name="twitter:image"
         property="twitter:image"
-        content="https://www.cvindoor.com/static/e663885cd35321d563a0490a83a59cd4/775d9/thumbnail.jpg"
+        content="https://www.cvindoor.com/thumbnail.jpg"
       />
       <meta name="twitter:image:alt" content="Chula Vista Indoor Soccer" />
       <meta name="twitter:site" content="@epratt.net" />
