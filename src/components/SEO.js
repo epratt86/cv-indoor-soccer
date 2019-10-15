@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import img from "../images/CVindoorLogo.png"
 
 const getData = graphql`
   query {
@@ -10,7 +11,6 @@ const getData = graphql`
         siteDesc: description
         author
         siteUrl
-        image
       }
     }
   }
@@ -19,25 +19,47 @@ const getData = graphql`
 const SEO = ({ title, description }) => {
   const { site } = useStaticQuery(getData)
 
-  const { siteDesc, siteTitle, siteUrl, image } = site.siteMetadata
+  const { siteDesc, siteTitle, siteUrl } = site.siteMetadata
 
   return (
     <Helmet title={`${title} | ${siteTitle}`} htmlAttributes={{ lang: "en" }}>
       <meta name="description" content={description || siteDesc} />
-      <meta name="image" content={image} />
       {/* twitter card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={siteTitle} />
-      <meta name="twitter:description" content={siteDesc} />
-      <meta name="twitter:image" content={`${siteUrl}${image}`} />
+      <meta
+        name="twitter:title"
+        property="twitter:title"
+        content={`${title}`}
+      />
+      <meta
+        name="twitter:description"
+        property="twitter:description"
+        content={`${description}`}
+      />
+      <meta
+        name="twitter:image"
+        property="twitter:image"
+        content="https://photos.google.com/u/1/photo/AF1QipMeIVjjAETIjfpO7SynqQWAzXnw-k_ItXnJ5veL"
+      />
+      <meta name="twitter:image:alt" content="Chula Vista Indoor Soccer" />
+      <meta name="twitter:site" content="@epratt.net" />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://www.cvindoor.com/" />
       {/* facebook card */}
-      <meta property="og:url" content={siteUrl} />
+      <meta
+        name="og:title"
+        property="og:title"
+        content={`${title} | ${siteTitle}`}
+      />
+      <meta
+        name="og:description"
+        property="og:description"
+        content={`${description}`}
+      />
+      <meta name="og:url" property="og:url" content={`${siteUrl}`} />
+      <meta name="og:image" property="og:image" content={img} />
+      <meta property="og:site_name" content="Chula Vista Indoor Soccer" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={siteTitle} />
-      <meta property="og:description" content={siteDesc} />
-      <meta property="og:image" content={`${siteUrl}${image}`} />
-      <meta property="og:image:width" content="400" />
-      <meta property="og:image:height" content="300" />
     </Helmet>
   )
 }
