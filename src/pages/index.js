@@ -82,17 +82,25 @@ export default class HomePage extends React.Component {
                   onSubmit={this._handleSubmit}
                   className={styles.mailchimp}
                 >
+                  <label htmlFor="email" style={{ display: "none" }}>
+                    email
+                  </label>
                   <input
                     type="email"
                     onChange={this._handleChange}
                     placeholder="example@gmail.com"
                     name="email"
+                    id="email"
                     required
                   />
+                  <label htmlFor="submit" style={{ display: "none" }}>
+                    submit
+                  </label>
                   <input
                     type="submit"
                     className="btn-primary"
                     value="sign up"
+                    id="submit"
                   />
                 </form>
                 <p className={`message ${this.state.className}`}>
@@ -105,6 +113,7 @@ export default class HomePage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialIcon}
+                  aria-label="Facebook"
                 >
                   <FaFacebookSquare />
                 </a>
@@ -113,14 +122,16 @@ export default class HomePage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialIcon}
+                  aria-label="Instagram"
                 >
                   <FaInstagram />
                 </a>
                 <a
-                  href="mailto:info@cvindoor.com"
+                  href="mailto:cvindoorsoccer@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialIcon}
+                  aria-label="Email"
                 >
                   <FaEnvelope />
                 </a>

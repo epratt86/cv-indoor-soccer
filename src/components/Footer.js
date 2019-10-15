@@ -16,6 +16,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialIcon}
+            aria-label="Facebook"
           >
             <FaFacebookSquare />
           </a>
@@ -24,14 +25,16 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialIcon}
+            aria-label="Instagram"
           >
             <FaInstagram />
           </a>
           <a
-            href="mailto:info@cvindoor.com"
+            href="mailto:cvindoorsoccer@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialIcon}
+            aria-label="Email"
           >
             <FaEnvelope />
           </a>
